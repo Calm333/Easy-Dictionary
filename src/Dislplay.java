@@ -5,14 +5,15 @@ import java.util.List;
 import java.util.Map;
 
 public class Dislplay extends JFrame {
-    private JPanel top;
+    private JPanel general;
     private JTextField leftTextField;
     private JTextField rightTextField;
     private JButton reverse;
-    private JButton translate;
     private JLabel leftLabel;
-    private JLabel rirghtLable;
+    private JLabel rightLabel;
     private JButton exit;
+    private JButton turn;
+    private JPanel top;
 
     private int px;
     private int py;
@@ -22,10 +23,10 @@ public class Dislplay extends JFrame {
     public Dislplay() {
         setUndecorated(true);
         setVisible(true);
-        setSize(450, 250);
+        setSize(450, 150);
         setLocationRelativeTo(null);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setContentPane(top);
+        setContentPane(general);
 
         list = new ArrayList<>();
 
@@ -35,8 +36,8 @@ public class Dislplay extends JFrame {
                 if (reverse.isDefaultCapable()) {
                     reverse.setDefaultCapable(false);
                     list.add(leftTextField.getText());
-                    leftLabel.setText("Английский");
-                    rirghtLable.setText("Русский");
+                    leftLabel.setText("АНГЛИЙСКИЙ");
+                    rightLabel.setText("РУССКИЙ");
                     leftTextField.setText(rightTextField.getText());
                     for (String l : list) {
                         rightTextField.setText(l);
@@ -44,8 +45,8 @@ public class Dislplay extends JFrame {
                 } else {
                     reverse.setDefaultCapable(true);
                     list.add(rightTextField.getText());
-                    leftLabel.setText("Русский");
-                    rirghtLable.setText("Английский");
+                    leftLabel.setText("РУССКИЙ");
+                    rightLabel.setText("АНГЛИЙСКИЙ");
                     rightTextField.setText(leftTextField.getText());
                     for (String r : list) {
                         leftTextField.setText(r);
@@ -59,11 +60,11 @@ public class Dislplay extends JFrame {
             public void keyPressed(KeyEvent e) {
                 int word = e.getKeyCode();
 
-                if (leftLabel.getText().equals("Русский")) {
+                if (leftLabel.getText().equals("РУССКИЙ")) {
                     if (word == KeyEvent.VK_ENTER) {
                         rightTextField.setText(Database.getHashMap().get(leftTextField.getText().toLowerCase()));
                     }
-                } else if (leftLabel.getText().equals("Английский")) {
+                } else if (leftLabel.getText().equals("АНГЛИЙСКИЙ")) {
                     if (word == KeyEvent.VK_ENTER) {
                         for (Map.Entry<String, String> entry : Database.getHashMap().entrySet()) {
                             if (entry.getValue().equals(leftTextField.getText().toLowerCase())) {
@@ -87,6 +88,18 @@ public class Dislplay extends JFrame {
                 int x = e.getXOnScreen();
                 int y = e.getYOnScreen();
                 setLocation(x - px, y - py);
+            }
+        });
+        exit.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                System.exit(0);
+            }
+        });
+        turn.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                setExtendedState(ICONIFIED);
             }
         });
     }

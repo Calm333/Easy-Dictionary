@@ -1,89 +1,136 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="Dislplay">
-  <grid id="27dc6" binding="top" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+  <grid id="27dc6" binding="general" layout-manager="GridLayoutManager" row-count="4" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
     <margin top="0" left="0" bottom="0" right="0"/>
     <constraints>
       <xy x="20" y="20" width="500" height="400"/>
     </constraints>
     <properties>
-      <background color="-12999041"/>
+      <background color="-1443585"/>
     </properties>
     <border type="none"/>
     <children>
-      <grid id="ddacb" layout-manager="GridLayoutManager" row-count="3" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+      <grid id="f9eb4" layout-manager="GridLayoutManager" row-count="1" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
         <margin top="0" left="0" bottom="0" right="0"/>
         <constraints>
-          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
         </constraints>
-        <properties/>
+        <properties>
+          <background color="-1443585"/>
+        </properties>
         <border type="none"/>
         <children>
-          <component id="ce5e3" class="javax.swing.JTextField" binding="leftTextField">
+          <component id="d48de" class="javax.swing.JTextField" binding="leftTextField">
             <constraints>
-              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
-                <preferred-size width="150" height="-1"/>
-              </grid>
-            </constraints>
-            <properties/>
-          </component>
-          <vspacer id="37208">
-            <constraints>
-              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
-            </constraints>
-          </vspacer>
-          <component id="d8cba" class="javax.swing.JTextField" binding="rightTextField">
-            <constraints>
-              <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
                 <preferred-size width="150" height="-1"/>
               </grid>
             </constraints>
             <properties>
-              <margin top="2" left="6" bottom="2" right="6"/>
+              <font name="Segoe UI" size="14" style="0"/>
+              <toolTipText value="Введите слово и нажмите &quot;Enter&quot;"/>
             </properties>
           </component>
-          <component id="f697c" class="javax.swing.JLabel" binding="leftLabel">
+          <component id="c60a1" class="javax.swing.JTextField" binding="rightTextField">
             <constraints>
-              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
             </constraints>
             <properties>
-              <text value="Русский"/>
+              <font name="Segoe UI" size="14" style="0"/>
             </properties>
           </component>
-          <component id="2a1cc" class="javax.swing.JLabel" binding="rirghtLable">
-            <constraints>
-              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-            </constraints>
-            <properties>
-              <text value="Английский"/>
-            </properties>
-          </component>
-          <component id="d1e54" class="javax.swing.JButton" binding="reverse">
+          <component id="b57da" class="javax.swing.JButton" binding="reverse">
             <constraints>
               <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
-              <text value="Button"/>
-            </properties>
-          </component>
-          <component id="f20e1" class="javax.swing.JButton" binding="translate">
-            <constraints>
-              <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="1" fill="1" indent="0" use-parent-layout="false"/>
-            </constraints>
-            <properties>
-              <text value="Button"/>
+              <background color="-1443585"/>
+              <borderPainted value="false"/>
+              <focusPainted value="false"/>
+              <icon value="_compare_arrows_90480.png"/>
+              <text value=""/>
             </properties>
           </component>
         </children>
       </grid>
-      <component id="c7aa9" class="javax.swing.JButton" binding="exit">
+      <vspacer id="905b6">
         <constraints>
-          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <grid id="92198" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="10" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <margin top="0" left="0" bottom="0" right="0"/>
-          <text value="X"/>
+          <background color="-1443585"/>
+          <foreground color="-16777216"/>
         </properties>
-      </component>
+        <border type="none"/>
+        <children>
+          <component id="2f435" class="javax.swing.JLabel" binding="leftLabel">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-16777216"/>
+              <font name="Segoe UI" size="14" style="0"/>
+              <foreground color="-16777216"/>
+              <text value="РУССКИЙ"/>
+            </properties>
+          </component>
+          <component id="637c7" class="javax.swing.JLabel" binding="rightLabel">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-16777216"/>
+              <font name="Segoe UI" size="14" style="0"/>
+              <foreground color="-16777216"/>
+              <text value="АНГЛИЙСКИЙ"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="31f81" binding="top" layout-manager="FlowLayout" hgap="0" vgap="0" flow-align="2">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-12999041"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="e8fcd" class="javax.swing.JButton" binding="turn">
+            <constraints/>
+            <properties>
+              <background color="-12999041"/>
+              <borderPainted value="false"/>
+              <focusPainted value="false"/>
+              <font size="12" style="1"/>
+              <foreground color="-1443585"/>
+              <text value="_"/>
+            </properties>
+          </component>
+          <hspacer id="c5421">
+            <constraints/>
+          </hspacer>
+          <component id="6a6da" class="javax.swing.JButton" binding="exit">
+            <constraints/>
+            <properties>
+              <background color="-12999041"/>
+              <borderPainted value="false"/>
+              <focusPainted value="false"/>
+              <font name="Segoe UI" size="12" style="1"/>
+              <foreground color="-1443585"/>
+              <text value="X"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
     </children>
   </grid>
 </form>
